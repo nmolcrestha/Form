@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Exam Registration</title>
+</head>
+<body>
+    <div class="conatiner">
+        <form class="ui form">
+            <h4 class="ui dividing header">Registration Form</h4>
+            <!-- Name Filed -->
+            <div class="field">
+              <label>Name<span class="star">*</span></label>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text" name="first-name" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <input type="text" name="first-name" placeholder="Middle Name">
+                  </div>
+                <div class="field">
+                  <input type="text" name="last-name" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+
+            <!-- Name of School and Faculty -->
+            <div class="two fields">
+                <div class="field">
+                  <label>Name of School/College</label>
+                  <input type="text" name="school" placeholder="School/College">
+                </div>
+                <div class="field">
+                    <label>Faculty</label>
+                    <input type="text" name="faculty" placeholder="Faculty">
+                </div>
+                <div class="two field">
+                    <label>Sex</label>
+                    <select class="ui fluid search dropdown" name="sex" id="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                  </div>
+              </div>
+
+              <!-- Registration No, Year and Exam Type-->
+              <div class="fields">
+                <div class="seven wide field">
+                    <label>MU Registration No</label>
+                    <input type="text" name="registration-no" maxlength="15" placeholder="Registration No">
+                </div>
+    
+                  <div class="two field">
+                    <label>Year</label>
+                    <input type="text" name="year" maxlength="4" placeholder="Year">
+                  </div>
+
+                  <div class="six wide field">
+                    <label>Exam Type</label>
+                    <select class="ui fluid search dropdown" name="exam-type" id="exam-type">
+                        <option value="Bachelor">Regular</option>
+                        <option value="Master">Chance</option>
+                        <option value="M.Phil.">Partial</option>
+                    </select>
+                  </div>
+              </div>
+
+
+              <!-- Registration No, Year and Exam Type-->
+              <div class="fields">
+                <div class="seven wide field">
+                    <label>Symbol No.</label>
+                    <input type="text" name="symbol-no" maxlength="4" placeholder="Symbol No.">
+                </div>
+    
+                <div class="four wide field">
+                    <label>Level</label>
+                    <select class="ui fluid search dropdown" name="level" id="level">
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Master">Master</option>
+                        <option value="M.Phil.">M.Phil.</option>
+                    </select>
+                  </div>
+
+                  <div class="six wide field">
+                    <label>Semester</label>
+                    <select class="ui fluid search dropdown" name="exam-type" id="exam-type">
+                        <option value="1Semester">1st Semester</option>
+                        <option value="2Semester">2nd Semester</option>
+                        <option value="3Semester">3rd Semester</option>
+                        <option value="4Semester">4th Semester</option>
+                        <option value="5Semester">5th Semester</option>
+                        <option value="6Semester">6th Semester</option>
+                        <option value="7Semester">7th Semester</option>
+                        <option value="8Semester">8th Semester</option>
+                    </select>
+                  </div>
+              </div>
+
+            <!-- Student Photo -->
+            <div class="field">
+                <label>PassPort Size Photo of Student</label>
+                <input type="file" name="photo">
+            </div>
+            
+            <!-- Subject Code and name -->
+            <h4 class="ui dividing header">Subject Infromation</h4>
+            <div class="two fields">
+                <div class="field">
+                  <label>Subject Name</label>
+                  <input type="text" name="subjectName1" placeholder="Subject Name">
+                </div>
+                <div class="two field">
+                    <label>Subject Code</label>
+                    <input type="text" name="subjectCode1" placeholder="Subject Code">
+                </div>
+                
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text" name="subjectName2" placeholder="Subject Name">
+                </div>
+                <div class="two field">
+                    <input type="text" name="subjectCode2" placeholder="Subject Code">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text" name="subjectName3" placeholder="Subject Name">
+                </div>
+                <div class="two field">
+                    <input type="text" name="subjectCode3" placeholder="Subject Code">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text" name="subjectName4" placeholder="Subject Name">
+                </div>
+                <div class="two field">
+                    <input type="text" name="subjectCode4" placeholder="Subject Code">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text" name="subjectName5" placeholder="Subject Name">
+                </div>
+                <div class="two field">
+                    <input type="text" name="subjectCode5   " placeholder="Subject Code">
+                </div>
+              </div>
+           
+              <h4 class="ui dividing header">Student's Other Infromation</h4>
+            
+
+              <div class="two fields">
+                <div class="field">
+                  <label>Nationality</label>
+                  <input type="text" name="nationality" placeholder="Nationality">
+                </div>
+                <div class="field">
+                    <label>Date of Birth (According to SLC/SEE):</label>
+                    <input type="date" name="dateOfBirth" placeholder="Date of Birth">
+                </div>
+                <div class="two field">
+                    <label>District</label>
+                    <input type="text" name="district" placeholder="District">
+                  </div>
+              </div>
+
+              <!-- Father and Mother Name -->
+              <div class="two fields">
+                <div class="field">
+                  <label>Mother's Name</label>
+                  <input type="text" name="motherName" placeholder="Mother's Name">
+                </div>
+                <div class="two field">
+                    <label>Father's Name</label>
+                    <input type="text" name="fatherName" placeholder="Father's Name">
+                </div>
+              </div>
+
+              <div class="two fields">
+                <div class="field">
+                    <label>Ward No.</label>
+                    <input type="text" name="ward" placeholder="Ward No.">
+                  </div>
+                  <div class="field">
+                    <label>Contact Number</label>
+                    <input type="text" name="contact" placeholder="Contact Number">
+                  </div>
+                  <div class="two field">
+                      <label>E-Mail</label>
+                      <input type="email" name="eMail" placeholder="E-Mail">
+                  </div>
+              </div>
+
+
+              <h4 class="ui dividing header">Examination History</h4>
+              <label>SLC/SEE</label>
+              <div class="fields">
+                <div class="seven wide field">
+                  <input type="text" name="slc-board" placeholder="Board or University">
+                </div>
+                <div class="three wide field">
+                  <input type="text" name="slc-year" placeholder="Passed Year">
+                </div>
+                <div class="six wide field">
+                  <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="slc-no"  placeholder="Roll No./ Symbol
+                        No.">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="slc-divison" placeholder="Division">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <label>Intermediate/+2</label>
+              <div class="fields">
+                <div class="seven wide field">
+                  <input type="text" name="college-board" placeholder="Board or University">
+                </div>
+                <div class="three wide field">
+                  <input type="text" name="college-year" placeholder="Passed Year">
+                </div>
+                <div class="six wide field">
+                  <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="college-no"  placeholder="Roll No./ Symbol
+                        No.">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="college-divison" placeholder="Division">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <label>Bachelor</label>
+              <div class="fields">
+                <div class="seven wide field">
+                  <input type="text" name="bachelor-board" placeholder="Board or University">
+                </div>
+                <div class="three wide field">
+                  <input type="text" name="bachelor-year" placeholder="Passed Year">
+                </div>
+                <div class="six wide field">
+                  <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="bachelor-no"  placeholder="Roll No./ Symbol
+                        No.">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="bachelor-divison" placeholder="Division">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <label>Master</label>
+              <div class="fields">
+                <div class="seven wide field">
+                  <input type="text" name="master-board" placeholder="Board or University">
+                </div>
+                <div class="three wide field">
+                  <input type="text" name="master-year" placeholder="Passed Year">
+                </div>
+                <div class="six wide field">
+                  <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="master-no"  placeholder="Roll No./ Symbol
+                        No.">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="master-divison" placeholder="Division">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <label>Others</label>
+              <div class="fields">
+                <div class="seven wide field">
+                  <input type="text" name="others-board" placeholder="Board or University">
+                </div>
+                <div class="three wide field">
+                  <input type="text" name="others-year" placeholder="Passed Year">
+                </div>
+                <div class="six wide field">
+                  <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="others-no"  placeholder="Roll No./ Symbol
+                        No.">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="others-divison" placeholder="Division">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="ui button" tabindex="0">Register</div>
+          </form>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
